@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insertar noticia</title>
+</head>
+<body>
+	<h1>Insertar noticia</h1>
+	<form action="insertando" method="post">
+		<table>
+			<tr>
+				<td><label for='titulo'>Título: </label></td>
+				<td><input type="text" name="titulo" id="titulo"/></td>
+			</tr>
+			<tr>
+				<td><label for='texto'>Texto: </label></td>
+				<td><textarea name="texto" id="texto" cols="12" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for='categoria'>Categoria: </label></td>
+				<td>
+					<select name="categoria" id="categoria">
+						<option>ofertas</option>
+						<option>costas</option>
+						<option>promociones</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input type="submit" name="insertar" value="Insertar noticia"/></td>
+			</tr>
+		</table>
+	</form>
+	<p>Volver al <a href="gestion.html">menú inicial</a></p>
+	<form action="desconexion" method="post">
+			<input type="submit" name="desconectar" value="Desconectar"/>
+		</form>
+</body>
+</html>
